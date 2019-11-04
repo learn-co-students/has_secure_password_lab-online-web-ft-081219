@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
   get '/welcome' => 'welcome#new'
-  root 'welcome#hello'
 end
