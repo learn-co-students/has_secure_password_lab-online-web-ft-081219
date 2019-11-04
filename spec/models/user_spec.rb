@@ -36,6 +36,7 @@ RSpec.describe User, type: :model do
     it 'returns the user if credentials match' do
       user = User.new
       user.password = 'foo'
+      # byebug
       expect(user.authenticate('foo')).to eq(user)
     end
 
